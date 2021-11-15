@@ -34,9 +34,48 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
-  <component name="RunManager" selected="Application.ArrayFindTarget">
+  <component name="RunManager" selected="Application.MinDifferenceArrays">
     <configuration name="ArrayFindTarget" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="array.ArrayFindTarget" />
+      <module name="algorithmLearn" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="array.MinDifferenceArrays" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CirculateArrayFindTarget" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="array.CirculateArrayFindTarget" />
+      <module name="algorithmLearn" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="array.MinDifferenceArrays" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Min" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="array.Min" />
+      <module name="algorithmLearn" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="array.MinDifferenceArrays" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MinDifferenceArrays" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="array.MinDifferenceArrays" />
       <module name="algorithmLearn" />
       <extension name="coverage">
         <pattern>
@@ -63,6 +102,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MinDifferenceArrays" />
+        <item itemvalue="Application.Min" />
+        <item itemvalue="Application.CirculateArrayFindTarget" />
         <item itemvalue="Application.ArrayFindTarget" />
         <item itemvalue="Application.ParlindromeStr" />
       </list>
