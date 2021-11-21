@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="71a6bd11-991f-47f3-a05a-230efa0a89e1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/array/CirculateArrayFindTarget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/array/CirculateArrayFindTarget.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/string/CommonPerfix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/string/CommonPerfix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/string/ParlindromeStr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/string/ParlindromeStr.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,15 +35,18 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
-  <component name="RunManager" selected="Application.MinDifferenceArrays">
-    <configuration name="ArrayFindTarget" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="array.ArrayFindTarget" />
+  <component name="RunManager" selected="Application.MountainArray">
+    <configuration name="BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sort.BubbleSort" />
       <module name="algorithmLearn" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="array.MinDifferenceArrays" />
+          <option name="PATTERN" value="sort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -48,12 +54,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CirculateArrayFindTarget" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="array.CirculateArrayFindTarget" />
+    <configuration name="CommonPerfix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="string.CommonPerfix" />
       <module name="algorithmLearn" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="array.MinDifferenceArrays" />
+          <option name="PATTERN" value="string.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -61,12 +67,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Min" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="array.Min" />
+    <configuration name="FastArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sort.FastArray" />
       <module name="algorithmLearn" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="array.MinDifferenceArrays" />
+          <option name="PATTERN" value="sort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -74,8 +80,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MinDifferenceArrays" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="array.MinDifferenceArrays" />
+    <configuration name="MountainArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="array.MountainArray" />
       <module name="algorithmLearn" />
       <extension name="coverage">
         <pattern>
@@ -87,8 +93,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParlindromeStr" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="string.ParlindromeStr" />
+    <configuration name="StackChar" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="string.StackChar" />
       <module name="algorithmLearn" />
       <extension name="coverage">
         <pattern>
@@ -102,11 +108,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MinDifferenceArrays" />
-        <item itemvalue="Application.Min" />
-        <item itemvalue="Application.CirculateArrayFindTarget" />
-        <item itemvalue="Application.ArrayFindTarget" />
-        <item itemvalue="Application.ParlindromeStr" />
+        <item itemvalue="Application.MountainArray" />
+        <item itemvalue="Application.BubbleSort" />
+        <item itemvalue="Application.FastArray" />
+        <item itemvalue="Application.StackChar" />
+        <item itemvalue="Application.CommonPerfix" />
       </list>
     </recent_temporary>
   </component>

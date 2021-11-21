@@ -4,17 +4,20 @@ import java.io.InputStream;
 import java.util.Scanner;
 
 /**
- * 回文字符串问题，包含两个问题：
+ * 回文字符串问题，包含3个问题：
  * 1. 字符串是否回文？
  * 2. 字符串中是否包含回文子串？
+ * 3. 最长回文子串, 暴力循环法，动态规划？
  */
 public class ParlindromeStr {
 
     public static void main(String[] args) {
-        InputStream inputStream = System.in;
-        Scanner scanner = new Scanner(inputStream);
-        String testStr = scanner.next();
-        isContainParlindromeStr1(testStr);
+//        InputStream inputStream = System.in;
+//        Scanner scanner = new Scanner(inputStream);
+//        String testStr = scanner.next();
+        String testStr = "ababc";
+        System.out.println(maxParlindromeStr(testStr));
+        System.out.println(getLongestPalindrome(testStr));
     }
 
     /**
@@ -44,9 +47,9 @@ public class ParlindromeStr {
      * 思路1：两层for循环，从两边开始往中间找，时间复杂度n^2,暴力枚举判断
      * @param testStr
      */
-    public static void isContainParlindromeStr(String testStr) {
+    public static boolean isContainParlindromeStr(String testStr) {
         if (testStr == null || testStr.length() < 2) {
-            System.out.println(false);
+            return false;
         }
 
         int len = testStr.length();
@@ -67,32 +70,68 @@ public class ParlindromeStr {
             }
         }
 
-        System.out.println(flag);
+        return flag;
     }
 
     /**
-     * 2. 字符串中是否包含回文子串？
-     * 思路1：两层for循环，从每个字符开始向两边遍历，时间复杂度n^2, 凑够某种意义上能比上种方法快一点，如果只判断true false的话，
-     * 只要判断有最小单元比如aa，aba这种类型就返回true
+     * 3. 最长回文子串, 暴力循环法，基于isContainParlindromeStr方法
      * @param testStr
      */
-    public static void isContainParlindromeStr1(String testStr) {
-        boolean flag = false;
+    public static int maxParlindromeStr(String testStr) {
+        int maxParlindrome = 0;
         if (testStr == null || testStr.length() < 2) {
-            System.out.println(flag);
+            return maxParlindrome;
         }
 
         int len = testStr.length();
+        for (int i = 0;i < len-1;i++) {
+            for (int j = len-1;j > i;j--){
+                int m = i;
+                int n = j;
+                int count = 0;
 
-        for (int i = 1;i < len-1;i++) {
-            while (testStr.charAt(i-1) == testStr.charAt(i)
-                    || testStr.charAt(i) == testStr.charAt(i+1)
-                    || testStr.charAt(i-1) == testStr.charAt(i+1)) {
-                flag = true;
-                break;
+                while (testStr.charAt(m) == testStr.charAt(n) && m < n) {
+                    count++;
+                    if (m + 1 == n || m +2 == n) {
+                        maxParlindrome = Math.max(maxParlindrome, count*2 + (n-m-1));
+                        break;
+                    }
+                    m++;
+                    n--;
+                }
             }
         }
 
-        System.out.println(flag);
+        return maxParlindrome;
+    }
+
+    public static int getLongestPalindrome(String A) {
+        // write code here
+        int maxParlindrome = 0;
+        int n = A.length();
+        if (n < 2) {
+            return maxParlindrome;
+        }
+
+        for (int i = 0;i < n-1;i++) {
+            for (int j = n-1;j > i;j--){
+                int x = i;
+                int y = j;
+                int count = 0;
+
+                while (A.charAt(x) == A.charAt(y) && x < y) {
+                    count++;
+                    if (x + 1 == y || x + 2 == y) {
+                        System.out.println(count*2 + (x-y-1));
+                        maxParlindrome = Math.max(maxParlindrome, count*2 + (y-x-1));
+                        break;
+                    }
+                    x++;
+                    y--;
+                }
+            }
+        }
+
+        return maxParlindrome;
     }
 }
