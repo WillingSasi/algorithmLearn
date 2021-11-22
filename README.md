@@ -1,2 +1,2 @@
 # algorithmLearn
-algorithm  Learn
+Algorithm  Learn
