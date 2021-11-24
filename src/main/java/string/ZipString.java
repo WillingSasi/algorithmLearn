@@ -15,6 +15,9 @@ package string;
  *
  * 问题2：现输入一个字符串，对字符串进行压缩，如：如字符串"abcdabcd"由于无连续重复字符，
  * 压缩后的字符串还是"abcdabcd"，字符串"xxxrryyyyyyz"压缩后就成为"3x2r6yz"。
+ *
+ * 问题3：字符串aabcccccaaa会变为a2b1c5a3。若“压缩”后的字符串没有变短，则返回原先的字符串。你可以假设字符串中只包含大小写英文字母（a至z）
+ * leetcode 面试题01.06 Easy
  */
 public class ZipString {
 
@@ -65,5 +68,27 @@ public class ZipString {
         newS.append(str.charAt(len-1));
 
         return newS.toString();
+    }
+
+    /**
+     * leetcode 面试题01.06 Easy
+     * @param S
+     * @return
+     */
+    public static String zipString3(String S) {
+        int len = S.length();
+        int index = 1;
+        StringBuffer sb = new StringBuffer();
+
+        for (int i = 0; i < len;i++) {
+            if (i+1 < len && S.charAt(i) == S.charAt(i+1)) {
+                index++;
+            } else {
+                sb.append(S.charAt(i)).append(index);
+                index = 1;
+            }
+        }
+
+        return sb.toString().length() >= len ? S : sb.toString();
     }
 }
