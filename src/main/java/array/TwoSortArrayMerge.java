@@ -40,7 +40,7 @@ public class TwoSortArrayMerge {
 
     /**
      * 解法2：三指针插入法，分别从m-1，m-1，m+n-1三个位置，倒序对比插入A，不涉及多元素位移
-     * ！错误思考！：双指针插入法，从B不断取数从头插入A，直到A[m-1]（大错特错）其中设计元素位移，复杂度太大，实现逻辑也复杂
+     * ！错误思考！：双指针插入法，从B不断取数从头插入A，直到A[m-1]（大错特错）其中涉及元素位移，复杂度太大，实现逻辑也复杂
      */
     public static void twoSortArrayMerge2(int A[], int m, int B[], int n) {
         A = expansionArray(A, m+n);
