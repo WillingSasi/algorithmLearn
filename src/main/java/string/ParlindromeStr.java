@@ -16,8 +16,9 @@ public class ParlindromeStr {
 //        Scanner scanner = new Scanner(inputStream);
 //        String testStr = scanner.next();
         String testStr = "ababc";
-        System.out.println(maxParlindromeStr(testStr));
-        System.out.println(getLongestPalindrome(testStr));
+//        System.out.println(maxParlindromeStr(testStr));
+//        System.out.println(getLongestPalindrome(testStr));
+        System.out.println(getLongestPalindromeStr(testStr));
     }
 
     /**
@@ -133,5 +134,31 @@ public class ParlindromeStr {
         }
 
         return maxParlindrome;
+    }
+
+    public static String getLongestPalindromeStr(String s) {
+        int len = s.length();
+        String newS = s;
+        int max = Integer.MIN_VALUE;
+
+        for (int i = 0;i < len-1;i++) {
+            int left = i;
+            for (int j = len-1;j > left;j--) {
+                int right = j;
+                while (s.charAt(right) == s.charAt(left) && left < right) {
+                    left++;
+                    right--;
+                }
+
+                if (left == right || left + 1 == right) {
+                    max = Math.max(max, j - i);
+                    if (max == j - i) {
+                        newS = s.substring(i, j);
+                    }
+                }
+            }
+        }
+
+        return newS;
     }
 }

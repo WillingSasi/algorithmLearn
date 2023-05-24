@@ -13,7 +13,7 @@ public class BubbleSort {
         int index = 0;
 
         for (int j = 0; j< len-1;j++) {
-            for (int i = 0;i < len-1;i++) {
+            for (int i = 0;i < len-1-i;i++) {
                 if (nums[i] > nums[i+1]) {
                     index = nums[i];
                     nums[i] = nums[i+1];
